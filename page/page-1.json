@@ -1,0 +1,33 @@
+[
+  {
+    "name": "ИЖ",
+    "model" : "71",
+    "weight": "1.1",
+    "rate": "20",
+    "price": "2200"
+  },{
+    "name": "Бердыш",
+    "model" : "OЦ-27",
+    "weight": "1.2",
+    "rate": "8",
+    "price": "1800"
+  },{
+    "name": "Пистолет Ярыгина",
+    "model" : "MP-443",
+    "weight": "0.95",
+    "rate": "15",
+    "price": "2000"
+  },{
+    "name": "Smith and Wesson",
+    "model" : "5903",
+    "weight": "1.063",
+    "rate": "8",
+    "price": "1950"
+  },{
+    "name": "Glock",
+    "model" : "19",
+    "weight": "0.595",
+    "rate": "10",
+    "price": "2600"
+  }
+]

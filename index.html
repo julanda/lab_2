@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="main.css">
+  <title>Guns List</title>
+</head>
+<body>
+  <div class="container">
+   <div class="row" style="display:flex; justify-content: flex-end">
+     
+     <div class="search" style="margin-right: auto"><input type="text" class="form-control" id="search" data-action="filter" data-filters="#table" placeholder="Filter"/></div>
+     <button type="button" class="btn btn-primary addbuton" data-toggle="modal" data-target="#myModal">
+  Add Gun
+</button>
+   </div>
+   <hr>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Add gun</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+            <form id="gun-form">
+      <div class="form-group">
+        <label for="Name">Name</label>
+        <input type="text" id="Name" class="form-control" placeholder="Name" required>
+      </div>
+      <div class="form-group">
+        <label for="Model">Model</label>
+        <input type="text" id="Model" class="form-control" placeholder="Model" required>
+      </div>
+      <div class="form-group">
+        <label for="name">Weight</label>
+        <input type="text" id="name" class="form-control" placeholder="Weight" required>
+      </div>
+      <div class="form-group">
+        <label for="theme">Rate</label>
+        <input type="text" id="theme" class="form-control" placeholder="Rate" required>
+      </div>
+      <div class="form-group">
+        <label for="theme">Price</label>
+        <input type="number" id="price" class="form-control" placeholder="Price" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Send" class="form-control">
+      </div>
+    </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="modal jsUpdateModal" id="myModalUpdate">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Update</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+      <form id="update-form">
+     <input type="hidden" id="id-hidden" class="form-control">
+      <div class="form-group">
+        <label for="up-title">Name</label>
+        <input type="text" id="up-title" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="up-gun">Model</label>
+        <input type="text" id="up-gun" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="up-name">Weight</label>
+        <input type="text" id="up-name" class="form-control" required>
+      </div>
+         <div class="form-group">
+        <label for="up-theme">Rate</label>
+        <input type="text" id="up-theme" class="form-control" required>
+      </div>
+        <div class="form-group">
+        <label for="up-price">Price</label>
+        <input type="number" id="up-price" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Update" class="form-control" id="Submit">
+      </div>
+    </form>
+      </div>
+  </div>
+      </div>
+      </div>
+    <table class="table" id="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col"></th>
+          <th scope="col" class="head" data-type="string" data-filter="Name" id="Name">Name&#8597</th>
+          <th scope="col" class="head" data-type="string" data-filter="Model" id="Model">Model&#8597</th>
+          <th scope="col" class="head" data-type="string" data-filter="Weight" id="Weight">Weight&#8597</th>
+          <th scope="col" class="head" data-type="string" data-filter="Rate" id="Rate">Rate of fire&#8597</th>
+          <th scope="col" class="head" data-type="number" data-filter="Price" id="Price">Price&#8597</th>
+          <th scope="col"></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="gun-list"></tbody>
+    </table>
+    <ul class="pagi" id="pagina">
+        
+    </ul>
+  </div>
+
+  <script src="appes6.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+</html>

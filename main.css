@@ -1,0 +1,80 @@
+.success, .error {
+      color: white;
+      padding: 5px;
+      margin: 5px 0 15px 0;
+}
+
+.success {
+        background: green;
+        text-align: center;
+}
+.hide {
+          display: none;
+}
+
+.error {
+      background: red;
+}
+.btn {
+          cursor: pointer;
+          display: block;
+          max-width: 200px;
+          padding: 6px;
+          text-align: center;
+          border: 1px teal;
+          border-radius: 4px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          -o-user-select: none;
+          user-select: none;
+          margin-top: 10px;
+}
+.upd {
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          -o-user-select: none;
+          user-select: none;
+}
+.pagi {
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: flex;
+          list-style-type: none;
+          align-items: center;
+          justify-content: center;
+}
+.pagi li {
+          display: block;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          text-align: center;
+          border: 1px solid #999;
+          cursor: pointer;
+}
+.head {
+          cursor: pointer;
+}
+.pagi li.active {
+          cursor: not-allowed;
+          background-color: lightblue;
+}
+.delete {
+          color: #000;
+          font-family: 700;
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          -o-user-select: none;
+          user-select: none;
+}
+#search{
+        max-width: 200px;
+        margin-top: 10px;
+}
